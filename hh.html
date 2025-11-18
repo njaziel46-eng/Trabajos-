@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Practica General</title>
+
+    <style>
+        body{
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial;
+        }
+
+        .mover-texto{
+            position: relative;
+            animation: mover 5s infinite alternate;
+        }
+
+        @keyframes mover {
+            from{ left: 0px; }
+            to{ left: 200px; }
+        }
+
+        .mover-imagen{
+            width: 200px;
+            animation: girar 4s infinite linear;
+        }
+
+        @keyframes girar {
+            from{ transform: rotate(0deg); }
+            to{ transform: rotate(360deg); }
+        }
+
+        .contenedor{
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px;
+        }
+
+        .form-mac{
+            background-color: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .form-mac input{
+            margin: 5px 0;
+            padding: 6px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .imagen-dividida{
+            width: 450px; 
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+
+    <h1 class="mover-texto">Mac DeMarco</h1>
+
+    <p>
+        Feelin so confused
+        You dont know what to do
+        Afraid she might not love you anymore
+        And though she says she does
+        And hasnt lost your trust
+        Must be another one she loves.
+    </p>
+
+    <p>
+        The feelin never stops
+        And neither does the clock
+        Wishin for tomorrow today
+        She still says shes true.
+    </p>
+
+    <img src="imagen2.jpg" class="mover-imagen">
+
+    <br><br>
+
+    <video width="400" controls>
+        <source src="Another One.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <p>
+        Mac DeMarco es un cantautor y productor canadiense nacido el 30 de abril de 1990 en Duncan, Columbia Británica. Es conocido por su distintivo estilo de "jizz jazz" y slacker rock, que se hizo popular en la escena musical independiente con álbumes como 2 (2012) y Salad Days (2014). Comenzó su carrera en la banda Makeout Videotape antes de lanzar su material en solitario, y en los últimos años ha mostrado interés en actividades más sencillas, incluyendo la plomería y la agricultura.     </p>
+
+    <hr>
+
+    <h2>Fan y quieres un saludo? Contesta el formulario</h2>
+
+    <div class="form-mac">
+    <form action="mailto:Manajerdmarco@hotmail.com" method="post" enctype="text/plain">
+
+        Nombre:<br>
+        <input type="text" name="Nombre" maxlength="15"><p>
+
+        Primer Apellido:<br>
+        <input type="text" name="Primer Apellido" maxlength="15"><br><br>
+
+        Segundo Apellido:<br>
+        <input type="text" name="Segundo Apellido" maxlength="15"><p>
+
+        Sexo:<br>
+        Hombre: <input type="radio" name="Sexo" value="Hombre">
+        Mujer: <input type="radio" name="Sexo" value="Mujer"><p>
+
+        Cancion favorita:<br>
+        No other heart: <input type="checkbox" name="No other heart" value="Si">
+        Another one: <input type="checkbox" name="Another one" value="Si">
+        Chamber reflexion: <input type="checkbox" name="Chamber reflexion" value="Si"><p>
+
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar datos">
+    </form>
+    </div>
+
+    <hr>
+
+    <h2>Selecciona un programa</h2>
+
+    <!-- UNA SOLA IMAGEN DIVIDIDA EN 3 PARTES -->
+    <img src="imagen3.jpg" class="imagen-dividida" usemap="#mapa">
+
+    <map name="mapa">
+        <!-- Primera zona (izquierda) -->
+        <area shape="rect" coords="0,0,150,500" href="uuuu.html">
+
+        <!-- Segunda zona (centro) -->
+        <area shape="rect" coords="150,0,300,500" href="ewe.html">
+
+        <!-- Tercera zona (derecha) -->
+        <area shape="rect" coords="300,0,450,500" href="saludo.html">
+    </map>
+
+</div>
+
+</body>
+</html>
