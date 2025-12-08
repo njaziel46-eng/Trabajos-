@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tienda de Ropa - Mejores Exitos</title>
+<meta charset="utf-8">
+<style>
+    body {
+        background-color: #0b3d91;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #87CEFA;
+    }
+
+    .album-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .album {
+        width: 200px;
+        text-align: center;
+    }
+
+    .album img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: 3px solid #87CEFA;
+    }
+
+    .album-name {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    form {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: none;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 48%;
+        background-color: #87CEFA;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .volver-btn {
+        display: block;
+        width: 200px;
+        margin: 30px auto;
+        text-align: center;
+        padding: 10px;
+        background-color: #87CEFA;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Mejores Exitos de Mac DeMarco</h1>
+
+<div class="album-container">
+
+    <div class="album">
+        <img src="A1.jpg" alt="Album 1">
+        <div class="album-name">Salad Days</div>
+    </div>
+
+    <div class="album">
+        <img src="A2.jpg" alt="Album 2">
+        <div class="album-name">2</div>
+    </div>
+
+    <div class="album">
+        <img src="A3.jpg" alt="Album 3">
+        <div class="album-name">This Old Dog</div>
+    </div>
+
+    <div class="album">
+        <img src="A4.jpg" alt="Album 4">
+        <div class="album-name">Here Comes the Cowboy</div>
+    </div>
+
+    <div class="album">
+        <img src="A5.jpg" alt="Album 5">
+        <div class="album-name">Rock and Roll Night Club</div>
+    </div>
+
+</div>
+
+<h2>Formulario</h2>
+
+<form action="mailto:casango.flores.ramon@gmail.com" method="post" enctype="Text/Plain">
+
+<textarea name="Opinion" cols="30" rows="5"></textarea><br><br>
+
+<input type="text" name="AlbumFavorito" size="30"><br><br>
+
+<input type="submit" value="Enviar datos">
+<input type="reset" value="Borrar datos">
+
+</form>
+
+<!-- BOTÓN DE VOLVER -->
+<a href="hh.html" class="volver-btn">Volver</a>
+
+</body>
+</html>

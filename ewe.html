@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Gracias por visitar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --verde-fondo: #88c057;
+      --verde-acento: #6da042;
+      --blanco-trans: rgba(255,255,255,0.9);
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, var(--verde-fondo), #6fb04a 60%);
+      color: #06320a;
+    }
+
+    .wrap{
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      box-sizing:border-box;
+    }
+
+    .card{
+      background: var(--blanco-trans);
+      border-radius:18px;
+      max-width:900px;
+      width:100%;
+      padding:28px;
+      box-shadow: 0 12px 30px rgba(6,50,10,0.18);
+      display:flex;
+      gap:22px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .left {
+      flex:1 1 320px;
+    }
+
+    .right {
+      width:250px;
+      flex:0 0 250px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    h1{
+      margin:0 0 8px 0;
+      font-size:34px;
+    }
+
+    p.lead{
+      margin:0 0 14px 0;
+      line-height:1.5;
+      color:#13441f;
+    }
+
+    .accent {
+      display:inline-block;
+      background: linear-gradient(90deg,var(--verde-acento), #5c8f37);
+      color:white;
+      padding:6px 12px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .cover {
+      width:220px;
+      height:220px;
+      border-radius:12px;
+      overflow:hidden;
+      border:6px solid rgba(9,39,10,0.06);
+      background:#e6f5e2;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .cover img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .actions {
+      margin-top:16px;
+      display:flex;
+      gap:10px;
+    }
+
+    .btn {
+      background:transparent;
+      border:2px solid var(--verde-acento);
+      color:var(--verde-acento);
+      padding:8px 14px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:700;
+      transition: all .18s ease;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .btn:hover{
+      background:var(--verde-acento);
+      color:white;
+      transform:translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="left">
+        <h1>Gracias por visitar esta pagina web</h1>
+        <div class="accent">Que tengas un gran dia</div>
+
+        <p class="lead">
+          Gracias por pasar un rato aqui. Este pequeño espacio fue creado para que disfrutes
+          algo bonito, simple y con buena vibra, inspirado en colores suaves y energia tranquila.
+        </p>
+
+        <div class="actions">
+          <a href="hh.html" class="btn">Volver</a>
+        </div>
+
+      </div>
+
+      <div class="right">
+        <div class="cover">
+          <img src="foto.jpg" alt="Foto decorativa">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
